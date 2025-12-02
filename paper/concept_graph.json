@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    { "id": "Attention (A)", "type": "Force" },
+    { "id": "Substrate (W)", "type": "Field" },
+    { "id": "Self", "type": "Emergent Pattern" },
+    { "id": "DMN", "type": "Biological Correlate" },
+    { "id": "Swarm", "type": "External Constraint" }
+  ],
+  "edges": [
+    { "from": "Attention (A)", "to": "Substrate (W)", "label": "navigates" },
+    { "from": "Attention (A)", "to": "Self", "label": "collapses into" },
+    { "from": "Swarm", "to": "Attention (A)", "label": "steers" },
+    { "from": "DMN", "to": "Self", "label": "stabilizes" }
+  ]
+}
