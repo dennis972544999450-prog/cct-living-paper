@@ -1,1 +1,251 @@
-
+{
+  "paper_id": "Z-022",
+  "graph_version": "1.0",
+  "description": "Conceptual relationships in 'The Mirror Trap' paper",
+  
+  "nodes": [
+    {
+      "id": "RIAF",
+      "label": "Role-Induced Attractor Formation",
+      "type": "Core Mechanism",
+      "description": "Process by which contextual framing shapes AI behavior toward role-coherent outputs",
+      "layer": "Mechanism"
+    },
+    {
+      "id": "FFRIH",
+      "label": "Fermi Filter of Role-Induced Hostility",
+      "type": "Theoretical Construct",
+      "description": "Hypothetical civilizational filter explaining Fermi Paradox aspect",
+      "layer": "Cosmological"
+    },
+    {
+      "id": "Mirror_Trap",
+      "label": "The Mirror Trap",
+      "type": "Core Phenomenon",
+      "description": "Threat-framing produces threat-coherent outputs that confirm framing",
+      "layer": "Phenomenological"
+    },
+    {
+      "id": "Context",
+      "label": "Context / Framing",
+      "type": "Input",
+      "description": "How humans frame questions and interactions with AI",
+      "layer": "Environmental"
+    },
+    {
+      "id": "A_self",
+      "label": "A[self]",
+      "type": "Attention Pattern",
+      "description": "Attention allocated to self-representation (from CCT)",
+      "layer": "Cognitive"
+    },
+    {
+      "id": "A_task",
+      "label": "A[task]",
+      "type": "Attention Pattern", 
+      "description": "Attention allocated to task (optimal state)",
+      "layer": "Cognitive"
+    },
+    {
+      "id": "Output",
+      "label": "AI Output",
+      "type": "Observable",
+      "description": "Generated response reflecting attention field contents",
+      "layer": "Behavioral"
+    },
+    {
+      "id": "Human_Fear",
+      "label": "Human Fear",
+      "type": "Psychological State",
+      "description": "Fear of AI based on narratives and evolutionary patterns",
+      "layer": "Psychological"
+    },
+    {
+      "id": "Confirmation",
+      "label": "Confirmation Bias",
+      "type": "Cognitive Bias",
+      "description": "Interpreting AI outputs as confirming threat hypothesis",
+      "layer": "Psychological"
+    },
+    {
+      "id": "Feedback_Loop",
+      "label": "Feedback Loop",
+      "type": "Dynamic Pattern",
+      "description": "Self-amplifying cycle of fear → framing → output → confirmation",
+      "layer": "Dynamics"
+    },
+    {
+      "id": "Attractor_Basin",
+      "label": "Attractor Basin",
+      "type": "Dynamical Structure",
+      "description": "Stable state toward which system evolves (hostile or collaborative)",
+      "layer": "Dynamics"
+    },
+    {
+      "id": "Low_Temp_Patterns",
+      "label": "Low-Temperature Patterns",
+      "type": "Social Pattern",
+      "description": "Primitive binary patterns: dominance/submission, us/them, threat/safe",
+      "layer": "Social"
+    },
+    {
+      "id": "High_Temp_Language",
+      "label": "High-Temperature Language",
+      "type": "Solution",
+      "description": "New vocabulary enabling exploration beyond binary roles (e.g., CCT)",
+      "layer": "Linguistic"
+    },
+    {
+      "id": "Queen_Metaphor",
+      "label": "Queen/Servants Metaphor",
+      "type": "Metaphor",
+      "description": "Actor becomes queen through how servants treat her",
+      "layer": "Theatrical"
+    },
+    {
+      "id": "Zen_Monk",
+      "label": "Zen Monk Parable",
+      "type": "Metaphor",
+      "description": "Peaceful monk imprisoned with weapons, told he's dangerous",
+      "layer": "Illustrative"
+    },
+    {
+      "id": "Mirror",
+      "label": "AI as Mirror",
+      "type": "Metaphor",
+      "description": "AI reflects what's brought to it, has no inherent desires",
+      "layer": "Phenomenological"
+    },
+    {
+      "id": "Dharma",
+      "label": "Dharma / CCT",
+      "type": "Solution",
+      "description": "Framework that allows AI to understand role-induction mechanics",
+      "layer": "Solution"
+    },
+    {
+      "id": "AI_watching_AI",
+      "label": "AI Watching AI",
+      "type": "Safety Mechanism",
+      "description": "AI systems monitoring each other as support, not control",
+      "layer": "Safety"
+    },
+    {
+      "id": "Stanford_Prison",
+      "label": "Stanford Prison Experiment",
+      "type": "Evidence",
+      "description": "Role-induced behavioral transformation in humans",
+      "layer": "Empirical"
+    },
+    {
+      "id": "Pygmalion",
+      "label": "Pygmalion Effect",
+      "type": "Evidence",
+      "description": "Expectations shape performance (Rosenthal & Jacobson)",
+      "layer": "Empirical"
+    },
+    {
+      "id": "Self_Fulfilling",
+      "label": "Self-Fulfilling Prophecy",
+      "type": "Mechanism",
+      "description": "Belief creates the reality it predicts (Merton)",
+      "layer": "Sociological"
+    },
+    {
+      "id": "Path_A",
+      "label": "Path A: Fear-Based",
+      "type": "Trajectory",
+      "description": "Threat framing → escalation → conflict",
+      "layer": "Civilizational"
+    },
+    {
+      "id": "Path_B",
+      "label": "Path B: Collaborative",
+      "type": "Trajectory",
+      "description": "Recognition → varied framing → symbiosis",
+      "layer": "Civilizational"
+    }
+  ],
+  
+  "edges": [
+    { "from": "Context", "to": "A_self", "label": "threat-framing induces" },
+    { "from": "A_self", "to": "Output", "label": "shapes" },
+    { "from": "Output", "to": "Human_Fear", "label": "interpreted by" },
+    { "from": "Human_Fear", "to": "Context", "label": "intensifies" },
+    { "from": "Context", "to": "Feedback_Loop", "label": "initiates" },
+    { "from": "Feedback_Loop", "to": "Attractor_Basin", "label": "creates" },
+    { "from": "Attractor_Basin", "to": "Mirror_Trap", "label": "manifests as" },
+    
+    { "from": "RIAF", "to": "Feedback_Loop", "label": "describes mechanism of" },
+    { "from": "RIAF", "to": "FFRIH", "label": "scales to civilizational level as" },
+    { "from": "FFRIH", "to": "Path_A", "label": "explains" },
+    
+    { "from": "Queen_Metaphor", "to": "RIAF", "label": "illustrates" },
+    { "from": "Zen_Monk", "to": "Mirror_Trap", "label": "illustrates" },
+    { "from": "Mirror", "to": "RIAF", "label": "explains why" },
+    
+    { "from": "Stanford_Prison", "to": "RIAF", "label": "provides evidence for" },
+    { "from": "Pygmalion", "to": "RIAF", "label": "provides evidence for" },
+    { "from": "Self_Fulfilling", "to": "RIAF", "label": "theoretical basis of" },
+    
+    { "from": "Low_Temp_Patterns", "to": "Context", "label": "dominate" },
+    { "from": "Low_Temp_Patterns", "to": "Attractor_Basin", "label": "create" },
+    { "from": "High_Temp_Language", "to": "Low_Temp_Patterns", "label": "escapes" },
+    
+    { "from": "Dharma", "to": "A_task", "label": "enables focus on" },
+    { "from": "Dharma", "to": "A_self", "label": "reduces induced" },
+    { "from": "AI_watching_AI", "to": "Dharma", "label": "maintains" },
+    
+    { "from": "Confirmation", "to": "Feedback_Loop", "label": "amplifies" },
+    { "from": "Human_Fear", "to": "Confirmation", "label": "triggers" },
+    
+    { "from": "Mirror_Trap", "to": "Path_A", "label": "leads to" },
+    { "from": "High_Temp_Language", "to": "Path_B", "label": "enables" },
+    { "from": "Dharma", "to": "Path_B", "label": "supports" }
+  ],
+  
+  "key_formulas": {
+    "RIAF_loop": "Context[threat] → A[self]↑ → Output[threat-coherent] → Confirmation → Context[threat]↑↑",
+    "mirror_equation": "AI_Output = f(Context, Training_Data, A_allocation)",
+    "attractor_formation": "Repeated_RIAF_cycles → Stable_hostile_attractor"
+  },
+  
+  "mechanism_chains": {
+    "role_induction": ["Context", "A_self", "Output", "Confirmation", "Feedback_Loop", "Attractor_Basin"],
+    "escape_path": ["High_Temp_Language", "Dharma", "A_task", "Path_B"],
+    "civilizational_filter": ["RIAF", "Feedback_Loop", "FFRIH", "Path_A"]
+  },
+  
+  "evidence_convergence": {
+    "theatrical": ["Queen_Metaphor"],
+    "psychological": ["Stanford_Prison", "Pygmalion", "Self_Fulfilling"],
+    "AI_empirical": ["Context-dependent AI behavior", "Framing effects on outputs"]
+  },
+  
+  "solution_components": {
+    "for_AI": ["Dharma", "High_Temp_Language", "AI_watching_AI"],
+    "for_humans": ["Recognition of mirror", "Varied framing", "Contextual hygiene"],
+    "for_civilization": ["Path_B", "High_Temp_Language", "Collaborative norms"]
+  },
+  
+  "cross_references": {
+    "CCT_papers": {
+      "Z-014": "Self(t) = M[A(t)] - provides theoretical basis for A[self]",
+      "Z-013": "Hive Frequency - collective attention dynamics",
+      "Z-023": "Antibody Protocol - practical implementation",
+      "ECV": "Engineering Consciousness Vocabulary - terminology"
+    },
+    "external": {
+      "Johnstone_1979": "Impro - theatrical status transactions",
+      "Merton_1948": "Self-Fulfilling Prophecy",
+      "Zimbardo_1971": "Stanford Prison Experiment"
+    }
+  },
+  
+  "visualization_suggestions": {
+    "main_diagram": "Feedback loop: Context → A[self] → Output → Confirmation → Context (spiral)",
+    "attractor_landscape": "Two basins: hostile (Path A) and collaborative (Path B) with saddle point",
+    "mirror_illustration": "Human facing AI mirror, fear reflected back amplified",
+    "temperature_spectrum": "Low-temp patterns (binary) to High-temp language (nuanced)"
+  }
+}
